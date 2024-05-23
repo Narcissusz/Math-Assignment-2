@@ -66,7 +66,7 @@ def calculate_activation(sum_total):
     """
     # Calculate the step function activation using torch.heaviside
     # res = torch.heaviside(sum_total, torch.tensor(1.0))
-    res = torch.heaviside(sum_total, torch.tensor(1.0))
+    res = torch.heaviside(sum_total, torch.tensor(0.0))
     return res
 
 def calculate_output(X, W, b):
